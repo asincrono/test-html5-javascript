@@ -45,7 +45,7 @@
 
         <input type="submit" name="cancelar" value="cancelar" formnovalidate />
 
-        <input type="button" name="checkCorreo" value="Comprobar Correo" />
+        <input type="button" name="checkCorreo" value="Activar webshims" onclick="webshim.polyfill('forms');" />
 
     </form>
 
@@ -53,9 +53,6 @@
 
     <script src="extras/modernizr-custom.js"></script>
     <script src="polyfiller.js"></script>
-    <script>
-        webshim.polyfill('forms');
-    </script>
 </body>
 
 </html>
