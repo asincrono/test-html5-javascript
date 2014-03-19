@@ -8,5 +8,11 @@ MiObjeto.prototype.saludar = function () {
     return 'hola ' + this.nombre;
 };
 
+
+var myFunc = function (value) {
+    'use strict';
+    return value * 3;
+};
+
 var objeto1 = new MiObjeto('primero', 'segundo', 'tercero');
 var objeto2 = new MiObjeto('tercero', 'cuarto', 'quinto');
