@@ -22,18 +22,24 @@
     <form method="post" action="ok.html">
         <label for="txtCampoObligatorio" accesskey="o">Obligatorio:</label>
         <input id="txtCampoObligatorio" name="campoObligatorio" type="text" required>
-        <br/>Email:
-        <input type="email" name="correo" placeholder="email@servidor.com" />
-        <br/>Teléfono:
-        <input type="tel" pattern="^\d{3}[- ]\d{5}$" placeholder="555-555555" />
-        <br/>Número:
-        <input type="number" min="0" max="9" step="1" />
-        <br/>Meter:
-        <meter min="0" max="100" low="10" high="90" optimum="50" value="50">50 sobre 100</meter>
-        <br/>Progress:
-        <progress max="100" value="50">Cargando...</progress>
-        <br/>Search:
-        <input type="search" />
+        <br/>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="correo" placeholder="email@servidor.com" />
+        <br/>
+        <label for="telefono">Teléfono:</label>
+        <input id="telefono" type="tel" pattern="^\d{3}[- ]\d{5}$" placeholder="555-555555" />
+        <br/>
+        <label for="numero">Número:</label>
+        <input id="numero" type="number" min="0" max="9" step="1" />
+        <br/>
+        <label for="meter">Meter:</label>
+        <meter id="meter" min="0" max="100" low="10" high="90" optimum="50" value="50">50 sobre 100</meter>
+        <br/>
+        <label for="progress">Progress:</label>
+        <progress id="progress" max="100" value="50">Cargando...</progress>
+        <br/>
+        <label for="search">Search:</label>
+        <input id="search" type="search" />
 
         <input type="submit" name="aceptar" value="Aceptar" />
 
