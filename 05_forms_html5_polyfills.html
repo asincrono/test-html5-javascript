@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -49,31 +49,13 @@
 
     </form>
 
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+
+    <script src="extras/modernizr-custom.js"></script>
+    <script src="polyfiller.js"></script>
     <script>
-        var checkCorreo = document.querySelector('input[name=checkCorreo]');
-        var email = document.querySelector('[name=correo]');
-        checkCorreo.addEventListener('click', function() {
-            window.alert(email.checkValidity());
-        });
-
-
-
-        document.forms[0].onsubmit = function() {
-            var validacion = this.correo.validity;
-
-            var mensaje = '';
-            for (key in validacion) {
-                if (validacion.hasOwnProperty(key) == true) {
-                    mensaje += key + ':' + validacion[key] + '\n'
-                }
-            }
-            window.alert(mensaje);
-            return false;
-
-        }
+        webshim.polyfill('forms');
     </script>
-
 </body>
-
 
 </html>
