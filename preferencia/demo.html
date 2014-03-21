@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Preferencias</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<!-- Precedencia de aplicación de CSS es:
+   1.- User agent (navegador).
+   2.- Link (archivo css).
+   3.- Style (<style>...</style>).
+   4.- Incrustado (en el propio elemento).-->
+
+<body>
+    <h1>Demo preferencias</h1>
+    Se hacen dos pasadas:
+    <ol>
+        <li>Primera pasada:</li>
+        <ol>
+            <li>User agent.</li>
+            <li>Link al archivo CSS.</li>
+            <li>Style.</li>
+            <li>Incrustado.</li>
+        </ol>
+        <li>Segunda pasada:</li>
+        <ol>
+            <li>User agent "!important"</li>
+            <li>Link "!important"</li>
+            <li>Style "!important"</li>
+            <li>Incrustado "!important"</li>
+        </ol>
+    </ol>
+    <ul>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Mandarinas</li>
+        <li>Fresas</li>
+    </ul>
+
+</body>
+
+</html>

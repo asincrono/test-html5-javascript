@@ -1,0 +1,15 @@
+h1 {
+    color: pink;
+}
+a[href^="empieza.por"] {
+    color: #eeeeee
+}
+a[href$="termina.con"] {
+    color: #4add37
+}
+p:before {
+    content: open-quote
+}
+p:after {
+    content: " valor : " attr(data-valor)
+}

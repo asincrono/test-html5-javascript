@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unidad Em</title>
+    <style>
+        body {
+            font-size: 2em;
+        }
+        span {
+            color: red;
+            border: 1px solid silver;
+            font-size: 1em;
+        }
+        span>span {
+            color: blue;
+            font-size: 2em;
+            /* 2 veces teniendo en cuenta el tamaño de letra del contenedor. */
+        }
+        span>span>span {
+            color: green;
+            font-size: 3rem;
+            /* rem = Root Em. Y es constante para todo el documento */
+            /* 3 veces teniendo en cuenta el tamaño de letra "M" orginal. */
+            /* será el doble de ancho que el anterio, pero 6 veces más ancho que el primero span. */
+            padding: 2px 8px 32px 64px;
+        }
+    </style>
+</head>
+
+<body>
+    Em es el tamaño que se considera legible de una "M".
+    <span>
+        M
+        <span>
+            M
+            <span>M</span>
+        </span>
+    </span>
+</body>
+
+</html>
