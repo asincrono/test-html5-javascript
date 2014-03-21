@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: lightgrey;
+    color: lightgray;
 }
 li:nth-child(1) {
     color: lightgreen;
