@@ -1,0 +1,38 @@
+@media (max-width: 45rem) {
+    h1 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    header {
+        width: 100%;
+    }
+    header>ul {
+        display: inline-block;
+        width: 100%;
+    }
+    header>ul>li {
+        color: red;
+        text-align: center;
+        display: inline-block;
+        width: 30%;
+    }
+    header>ul:after {
+        content: ".";
+        visibility: hidden
+    }
+    main {
+        width: 100%;
+        text-align: center;
+    }
+    section:first-line {
+        color: red;
+        display: inline-block;
+        vertical-align: top;
+    }
+    section {
+        display: inline-block;
+        width: 30%;
+        margin: 0 0.5rem;
+        text-align: left;
+    }
+}
