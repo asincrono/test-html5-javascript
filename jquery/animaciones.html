@@ -17,7 +17,11 @@
     <script>
         var actualizaCotizacion = function() {
             'use strict';
-            $('p').text('34.8€');
+
+            $('p').fadeOut(function() {
+                $('p').text('35.89€');
+            }).fadeIn();
+
         };
 
         var inicializar = function() {
