@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Demo JQuery</h1>
+
+
+    <h2>Párrafo 1.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, atque enim odio nesciunt optio aperiam possimus vero cum quis neque tenetur fugiat non accusamus. Dolore, quaerat molestias repudiandae reiciendis rem nesciunt asperiores sapiente fugit! Delectus, velit, nesciunt accusantium voluptatem cum ipsum sit quod labore quas voluptatibus corporis corrupti in natus numquam sed nulla ea impedit beatae perferendis possimus aliquam doloremque ducimus non ab cumque est ut nostrum tempore dolorem debitis! Assumenda, fuga placeat facilis eligendi dolorem omnis maxime ipsa hic! Inventore, in, ducimus cumque vitae eos voluptatibus repellat amet saepe alias rerum architecto similique tenetur consequuntur velit hic itaque eligendi?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, provident.</p>
+
+    <h2>Párrafo 2.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, libero, architecto, qui, ipsa aspernatur sunt soluta dolores eaque pariatur dolorem ad provident ipsam eligendi. Alias, illo, sunt ducimus temporibus reprehenderit sapiente in officia perferendis eligendi minima consectetur soluta delectus esse necessitatibus pariatur quam sit sint molestiae facilis nesciunt debitis architecto dignissimos obcaecati a sed ratione voluptatibus assumenda omnis nostrum quod nam quisquam est mollitia ullam iste sequi iure provident! Omnis, perspiciatis, quas quia illo amet ab aut culpa voluptas eveniet ea quos accusamus rerum id iusto obcaecati maiores dicta eius soluta facere beatae recusandae nostrum tempore necessitatibus veritatis libero sequi!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, veritatis repellat et non quia enim labore tempore omnis libero aspernatur.</p>
+    <h2>Párrafo 3.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, minus, tempore sint voluptatibus molestias temporibus ea laudantium mollitia exercitationem ipsam repudiandae deserunt optio quidem consectetur aliquam eos sed voluptatem nulla sunt ullam ab delectus repellendus quia dolorem animi officiis quaerat fugiat odit fugit? Aut, porro, perspiciatis, blanditiis, laudantium vitae possimus dolores architecto sit enim quod hic nostrum optio nihil debitis facere beatae aliquid dolorum quis tempore facilis. Officia, quasi, laudantium, quas, ipsam inventore tempore deleniti dicta officiis excepturi perferendis a suscipit harum non libero tenetur sint cupiditate numquam rem placeat soluta quam consequuntur explicabo saepe velit voluptas. Provident, dolores, illo!</p>
+
+    <h2>Párrafo 4.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, minus, tempore sint voluptatibus molestias temporibus ea laudantium mollitia exercitationem ipsam repudiandae deserunt optio quidem consectetur aliquam eos sed voluptatem nulla sunt ullam ab delectus repellendus quia dolorem animi officiis quaerat fugiat odit fugit? Aut, porro, perspiciatis, blanditiis, laudantium vitae possimus dolores architecto sit enim quod hic nostrum optio nihil debitis facere beatae aliquid dolorum quis tempore facilis. Officia, quasi, laudantium, quas, ipsam inventore tempore deleniti dicta officiis excepturi perferendis a suscipit harum non libero tenetur sint cupiditate numquam rem placeat soluta quam consequuntur explicabo saepe velit voluptas. Provident, dolores, illo!</p>
+
+
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        console.log('hola');
+        var h2Elems = document.querySelectorAll('h2:nth-of-type(odd)');
+        console.log('Num. elems:' + h2Elems.length);
+        for (var i = 0; i < h2Elems.length; i += 1) {
+            var elem = h2Elems[i];
+            elem.style.color = 'pink';
+            if (elem) {
+                console.log(elem)
+            };
+        }
+
+
+        var array = $({
+            hola: 'wop'
+        });
+         //  Con JQuery $( < objeto > ) devuelve un array
+
+
+        $('p:nth-child(odd)');
+        console.log($('html').attr('lang'));
+    </script>
+</body>
+
+</html>

@@ -5,41 +5,6 @@ var Controler = function () {
     this.bttClear = document.querySelector('#clearList');
     this.inputTask = document.querySelector('#inputTask');
     this.listTask = document.querySelector('#taskList');
-
-
-    //    inputTask = document.querySelector('#inputTask');
-    //    listTask = document.querySelector('#taskList');
-    //    bttSaveTask = document.querySelector('#saveTask');
-    //    this.showTask = function (task) {
-    //        var listItem = document.createElement('li');
-    //        listItem.innerHTML = task.toString();
-    //        listTask.appendChild(listItem);
-    //    };
-
-    //    this.showTaskList = function () {
-    //        var i, tasksSer, tasks, listItem;
-    //        tasksSer = localStorage.getItem('task');
-    //        tasks = JSON.parse(tasksSer);
-    //
-    //        for (i = 0; i < tasks.length; i += 1) {
-    //            listItem = document.createElement('li');
-    //            listItem.innerHTML = Task.getString(tasks[i]);
-    //            listTask.appendChild(listItem);
-    //        }
-    //    };
-
-    //    this.initialize = function () {
-    //        var self;
-    //        self = this;
-    //        this.showTaskList();
-    //
-    //        bttSaveTask.addEventListener('click', function () {
-    //            var taskContent = inputTask.value;
-    //            if (taskContent) {
-    //                self.addTask(new Task(taskContent), self.showTask, null);
-    //            }
-    //        });
-    //    };
 };
 
 Controler.prototype.getTaskList = function () {

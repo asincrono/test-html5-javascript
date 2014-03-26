@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery DOM</title>
+</head>
+
+<body>
+    <h1>Hola, esto es un "h1".</h1>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        var lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eum?';
+
+        var h2 = document.createElement('h2');
+        h2.innerHTML = "Hola mundo!";
+        document.querySelector('body').appendChild(h2);
+         // MODIFICAR DOM VÍA JQuery.
+        $('p').each(function(idx, p) {
+            console.log('El párrafo %d mide %d caracteres.',
+                idx, $(p).text().length); // $(p) "envuelve" el elemento del dom en un elemento JQ.
+        });
+
+
+        $('<h2>')
+            .text(lorem)
+            .insertBefore($('h1'));
+    </script>
+</body>
+
+</html>
